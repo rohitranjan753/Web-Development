@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            background-image: url(back3.jpg);
+        }
+        #firstname, #password{
+            border: 2px solid black;
+            border-radius: 10px;
+            height: 40px;
+            width: 160px;
+        }
+        #submitBtn, #resetBtn{
+            border: 2px solid black;
+            border-radius: 10px;
+            height: 40px;
+            width: 160px;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://www.google.com/" method="get" name="myform" onsubmit="return validateForm()">
+        <p>
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" placeholder="Enter Name">
+            <br>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter Pasword">
+            <br>
+            <br>
+            <!-- <input type="radio" name="sex" value="male"> MALE<br>
+            <input type="radio" name="sex" value="female"> FEMALE<br>
+            <input type="radio" name="sex" value="others"> OTHERS<br> -->
+            <input type="submit" value="SUBMIT" id="submitBtn"> 
+            <input type="reset" value="RESET" id="resetBtn"> 
+
+
+        </p>
+      </form>
+</body>
+<script>
+    function validateForm(){
+        var name = document.myform.firstname.value;
+        var password = document.myform.password.value;
+
+        if (name == null || name=="") {
+            alert("Name can't be black");
+            return false;
+        }
+        if(password.length<6){
+            alert("password must be greater than 6");
+            return false;
+        }   
+    }
+</script>
+</html>

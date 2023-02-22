@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            background-image: url(back3.jpg);
+        }
+        #firstname, #lastname,#email{
+            border: 2px solid black;
+            border-radius: 10px;
+            height: 40px;
+            width: 160px;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://www.google.com/" method="get" name="myform">
+        <p>
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname">
+            <br>
+            <br>
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname">
+            <br>
+            <br>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email">
+            <br>
+            <br>
+            <input type="radio" name="sex" value="male"> MALE<br>
+            <input type="radio" name="sex" value="female"> FEMALE<br>
+            <input type="radio" name="sex" value="others"> OTHERS<br>
+            <input type="submit" value="SUBMIT"> 
+            <input type="reset" value="RESET"> 
+
+
+        </p>
+      </form>
+</body>
+<!-- <script>
+    function validateForm(){
+        var name = document.myform.name.value;
+        var password = document.myform.password.value;
+
+        if (name == null || name==" ") {
+            alert("Name can't be black");
+            return false;
+        }
+        else if
+    }
+</script> -->
+</html>

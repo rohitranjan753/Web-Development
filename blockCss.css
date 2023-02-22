@@ -1,0 +1,198 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+   scroll-behavior: smooth; 
+}
+
+/* navigation bar */
+
+#navBar{
+    background-color: rgba(63, 137, 197, 0.757);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/*  nav:logo and image */
+
+#logoimg{
+    margin: 10px 10px;
+    height: 20%;
+    width: 20%;
+}
+
+#navBar ul{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#navBar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#navBar ul li{
+    list-style: none;
+    font-size: 1.3rem ;
+}
+
+#navBar ul li a{
+    color: rgb(0, 0, 0);
+    display: block;
+    font-weight: bold;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+
+#navBar ul li a:hover{
+    color: black;
+    background-color: rgb(106, 191, 222);
+}
+
+/* home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 560px;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('back4.jpg') no-repeat center center/cover;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.860;
+}
+
+#home h1{
+    color: rgb(11, 45, 60);
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Edu QLD Beginner', cursive;
+}
+
+#home p{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* services section  */
+
+
+
+#services{
+    /* background-image: url(./back5.jpg); */
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid rgb(8, 99, 99);
+    padding: 30px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-image: url(back7.jpg);
+    background-position: center;
+    background-size: cover;
+    /* background: #c9f1ff; */
+}
+
+#services .box p{
+    color: rgb(255, 255, 255);
+    font-family: 'Quicksand', sans-serif;
+}
+
+#services .box h2{
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+#services .box img{
+    height: 147px;
+    margin: auto;
+    display: block;
+}
+
+#services .box video{
+    height: 147px;
+    margin: auto;
+    display: block;
+}
+
+/* About us */
+
+#clientsection{
+    height: 200px;
+}
+
+#clientsection::before{
+    content: "";
+    position: absolute;
+    background: url(back6.jpg);
+    width: 100%;
+    height: 30%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients{
+    justify-content: center;
+    align-items: center;
+}
+
+.clientitems{
+    padding: 34px;
+}
+
+#clients p{
+    font-size: 25px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: turquoise;
+    color: rgb(10, 53, 53);
+    margin: 17px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+footer{
+    background: rgb(0, 62, 84);
+    color: white;
+    padding-right: 9px 20px;
+}
+
+.center{
+    text-align: center;
+}
