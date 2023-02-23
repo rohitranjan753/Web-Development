@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("background1.jpg");
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  /* background-color: rgb(199, 65, 65); */
+  background-image: url("academic3.jpg");
+  background-position: 50%;
+  background-size: cover;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  background-color: aquamarine;
+  margin: 20;
+  padding: 10;
+  display: inline-block;
+}
+
+nav li {
+  display: inline-block;
+  margin: auto;
+  margin-right: 20px;
+}
+
+section {
+  padding: 20px;
+}
+
+footer {
+  background-color: lightgray;
+  padding: 20px;
+  text-align: center;
+}
