@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <p class="test">This is a paragraph of text.</p>
     <script>
         // const cars=["BMW","AUDI","VOLVO","Maruti"];
         // const cars=[];
@@ -15,12 +16,21 @@
         // cars[2]="VOLVO";
         // document.write(cars);
 
-        const cars = new Array("a","b","c","d");
-        document.write(cars);
-        var carVal = cars[1];
-        document.write(carVal);
-    
-    
+        const cars = new Array("a","A","c","d");
+        // document.write(cars);
+        // var carVal = cars[1];
+        // document.write(carVal);
+        // const person = ["John", "Doe", 46];
+
+        document.write(cars.sort())
+        // [-5,10,-65]
+        // var num = [5,20,10,75,50,100];
+        // num.sort(function(a,b){
+        //     return a-b;
+        // });
+        // document.write(num);
+
+        var matches = document.getElementsByClassName("test");
     </script>
 </body>
 </html>

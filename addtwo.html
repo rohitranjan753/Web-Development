@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            background-image: url(back3.jpg);
+        }
+        #firstNumber, #secondNumber{
+            border: 2px solid black;
+            border-radius: 10px;
+            height: 40px;
+            width: 160px;
+        }
+        #submitBtn, #resetBtn{
+            border: 2px solid black;
+            border-radius: 10px;
+            height: 40px;
+            width: 160px;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://www.google.com/" method="get" name="myform" onsubmit="return validateForm()">
+        <p>
+            <label for="firstNumber">First Name:</label>
+            <input type="number" id="firstNumber" placeholder="Enter Name" name="firstNumber">
+            <br>
+            <br>
+            <label for="secondNumber">Password:</label>
+            <input type="number" id="secondNumber" name="secondNumber" placeholder="Enter Pasword">
+            <br>
+            <label for="resultSum">Password:</label>
+            <input type="number" id="resultSum" name="resultSum" placeholder="Result">
+            <br>
+            <br>
+            <button type="button" onclick="addNumbers()">Add</button><br>
+
+
+        </p>
+      </form>
+</body>
+<script>
+    function addNumbers(){
+        var first =document.myform.firstNumber.value;
+        var second = document.myform.secondNumber.value;
+        if (first == null || first=="") {
+            alert("first number is blank");
+            return false;
+        }
+        else if(second == null || second==""){
+            alert("second number is blank");
+            return false;
+        }
+        else{
+            first = parseInt(first);
+            second = parseInt(second);
+            var summ = first + second;
+            document.myform.resultSum.value = summ; 
+        }   
+    }
+</script>
+</html>
