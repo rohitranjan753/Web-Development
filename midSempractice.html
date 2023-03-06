@@ -53,8 +53,24 @@
       var result = myArray.find(function (element) {
         return element > 4;
       });
-      document.write("Find Value element", resultArray);
-      document.write("Find Value", result);
+      document.write("find() element", resultArray);
+      document.write("find()", result);
+      document.write("--------------");
+
+
+      //findIndex
+      var myArray=[1,2,3,4,5];
+      var findIndexVal = myArray.findIndex(element => element >4);
+      document.write("findIndex", resultArray);
+
+
+      //includes
+      var myArray=[1,2,3,4,5];
+      var includesResult = myArray.includes(4);
+      document.write("includes: ", includesResult);
+
+
+
     </script>
   </body>
 </html>
