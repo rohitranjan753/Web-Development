@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="displayData()">
+    <div id="output"></div>
+    <!-- <div id="output1"></div> -->
+  </body>
+<script>
+    function displayData() {
+      var urlParams = new URLSearchParams(window.location.search);
+      var name = urlParams.get('name');
+      var pass = urlParams.get('password');
+      document.getElementById('output').innerHTML = "Welcome, " + name + "!" + pass + "     This is password";
+    //   document.getElementById('output1').innerHTML = "Welcome, " + pass + "!";
+    }
+  </script>
+</html>
