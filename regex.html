@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo1"></p>
+    <p id="demo1g"></p>
+    <p id="demo1gi"></p>
+
+    <script>
+        let text = "Hello World! hi";
+        let pattern = /[oH]/;
+        let result1 = text.match(pattern);
+        document.getElementById("demo1").innerHTML = result1;
+  
+        let pattern1g = /[Ho]/g;
+        let result1g = text.match(pattern1g);
+        document.getElementById("demo1g").innerHTML = result1g;
+  
+        let pattern1gi = /[Ho]/gi;
+        let result1gi = text.match(pattern1gi);
+        document.getElementById("demo1gi").innerHTML = result1gi;
+      </script>
+  </body>
+</html>
