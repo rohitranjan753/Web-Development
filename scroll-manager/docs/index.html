@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Scroll Manager</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="Smooth Scroll Manager is utility class that controls smooth scroll and showing some elements by scroll event."
+    />
+    <meta name="keywords" content="" />
+    <style>
+      .l-page {
+        visibility: hidden;
+      }
+    </style>
+
+    <link
+      rel="preload"
+      as="style"
+      href="./css/main.min.css"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link rel="icon" href="/scroll-manager/img/common/icon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/common/cloud1.jpg"
+    />
+    <meta name="msapplication-TileImage" content="./img/common/cloud1.jpg" />
+    <meta name="msapplication-TileColor" content="#111111" />
+    <meta name="theme-color" content="#111111" />
+    <meta property="og:title" content="Scroll Manager" />
+    <meta property="og:site_name" content="Scroll Manager" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Smooth Scroll Manager is utility class that controls smooth scroll and showing some elements by scroll event."
+    />
+
+    <meta property="og:image" content="./img/common/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Scroll Manager" />
+    <meta
+      name="twitter:description"
+      content="Smooth Scroll Manager is utility class that controls smooth scroll and showing some elements by scroll event."
+    />
+  </head>
+  <body>
+    <div class="l-page" data-page-id="index">
+      <div class="l-gh"></div>
+      <div class="l-contents js-contents">
+        <div class="p-contents-header">
+          <div class="p-contents-header__in">
+            <h1 class="p-contents-header__title">Nature Collage Scroll</h1>
+            <p class="p-contents-header__excerpt js-smooth-item">
+              This webpage contains nature photography<br />which includes
+              clouds, night sky, sunsets, morning sky.
+            </p>
+            <div
+              class="p-contents-header__btn js-smooth-item"
+              data-ratio-y="0.15"
+            >
+              <a
+                class="c-button-border js-scroll-item js-hover"
+                href="https://contributor.stock.adobe.com/en/account#public-profile"
+                target="_blank"
+                ><span class="c-button-border__label">view artist page</span
+                ><span class="c-button-border__line-v"></span
+                ><span class="c-button-border__line-h"></span
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="l-contents__in">
+          <div class="p-local-navi">
+            <div class="p-local-navi__item">
+              <a
+                class="c-text-link-underline js-anchor-link js-hover"
+                href="#section1"
+                >Star Section</a
+              >
+            </div>
+            <div class="p-local-navi__item">
+              <a
+                class="c-text-link-underline js-anchor-link js-hover"
+                href="#section2"
+                >Morning cloud section</a
+              >
+            </div>
+            <div class="p-local-navi__item">
+              <a
+                class="c-text-link-underline js-anchor-link js-hover"
+                href="#section3"
+                >Cloud section</a
+              >
+            </div>
+          </div>
+          <div class="c-section" id="section1">
+            <div class="c-section__image">
+              <div class="c-section__image-in js-smooth-item">
+                <img
+                  class="js-parallax-item"
+                  src="./img/common/night1.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="c-section__content">
+              <h2 class="c-section__head">DARK NIGHT WITH STARS</h2>
+              <p>
+                The dark night with stars can be a beautiful and awe-inspiring
+                sight. When there are no sources of artificial light around, the
+                night sky can reveal a vast expanse of stars and galaxies that
+                are often hidden from view. Looking up at the stars on a dark
+                night can evoke a sense of wonder and curiosity about the
+                universe and our place in it. It can also be a humbling
+                experience, as we realize how small we are in comparison to the
+                vastness of the cosmos.
+              </p>
+              <!-- <div
+                class="c-button-border c-button-border--black js-scroll-item js-hover js-open-modal"
+              >
+                <span
+                  class="c-button-border__label c-button-border__label--black"
+                  >Open Modal</span
+                ><span
+                  class="c-button-border__line-v c-button-border__line-v--black"
+                ></span
+                ><span
+                  class="c-button-border__line-h c-button-border__line-h--black"
+                ></span>
+              </div> -->
+            </div>
+          </div>
+          <div class="c-section c-section--reverse" id="section2">
+            <div class="c-section__image">
+              <div class="c-section__image-in js-smooth-item">
+                <img
+                  class="js-parallax-item"
+                  src="./img/common/sunset3.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="c-section__content">
+              <h2 class="c-section__head">MORNING CLOUDS WITH FOG</h2>
+              <p>
+                Morning clouds with fog can create a serene and mystical
+                atmosphere. The soft, fluffy clouds that hover low to the ground
+                in combination with the misty fog can create a sense of calmness
+                and tranquility. The fog itself can be intriguing, as it can
+                obscure distant objects and create a sense of mystery and
+                ambiguity. It can also have a cooling effect, making it
+                refreshing to be outside during a hot day.
+              </p>
+            </div>
+          </div>
+          <div class="c-section" id="section3">
+            <div class="c-section__image">
+              <div class="c-section__image-in js-smooth-item">
+                <img
+                  class="js-parallax-item"
+                  src="./img/common/cloud2.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="c-section__content">
+              <h2 class="c-section__head">DISPERSED CLOUD</h2>
+              <p>
+                Dispersed clouds can create a beautiful and dynamic sky. When
+                the clouds are scattered throughout the sky, it can allow the
+                sun's rays to filter through in interesting and captivating
+                ways, creating stunning displays of light and shadow. Dispersed
+                clouds can also be a welcome relief on a hot day, as they can
+                block some of the sun's direct rays and provide a bit of shade.
+                They can also have practical applications, such as in
+                agriculture, where they can help regulate temperature and
+                moisture levels.
+              </p>
+            </div>
+          </div>
+          <div class="p-accordion-wrap">
+            <div class="p-accordion c-accordion js-accordion">
+              <div
+                class="p-accordion__head c-accordion__trigger js-accordion-trigger"
+              >
+                Thoghts on Night Sky
+                <div class="p-accordion__icon"></div>
+              </div>
+              <div
+                class="p-accordion__body c-accordion__body js-accordion-body"
+              >
+                <div
+                  class="p-accordion__body-in c-accordion__body-in js-accordion-body-in"
+                >
+                The dark night with stars can be a beautiful and awe-inspiring sight.
+                
+                In addition to its aesthetic appeal, the dark night with stars has scientific importance. Observing the stars and their movements can provide insights into the workings of the universe, such as the structure of galaxies and the properties of dark matter and energy.
+                <br>
+                However, it's important to note that too much light pollution can obscure the beauty and scientific value of the dark night sky. Excessive artificial light can make it difficult to see stars and can have negative impacts on human health and wildlife.
+                
+                Overall, the dark night with stars can be a profound and inspiring sight that reminds us of the beauty and mystery of the universe.
+                </div>
+              </div>
+            </div>
+            <div class="p-accordion c-accordion js-accordion">
+              <div
+                class="p-accordion__head c-accordion__trigger js-accordion-trigger"
+              >
+                Thoughts on Morning Clouds
+                <div class="p-accordion__icon"></div>
+              </div>
+              <div
+                class="p-accordion__body c-accordion__body js-accordion-body"
+              >
+                <div
+                  class="p-accordion__body-in c-accordion__body-in js-accordion-body-in"
+                >
+                Morning clouds with fog can create a serene and mystical atmosphere. The soft, fluffy clouds that hover low to the ground in combination with the misty fog can create a sense of calmness and tranquility.
+
+                The fog itself can be intriguing, as it can obscure distant objects and create a sense of mystery and ambiguity. It can also have a cooling effect, making it refreshing to be outside during a hot day.
+                <br>
+                
+                In addition, the fog can have practical applications, such as in agriculture, where it can provide moisture for crops, or in air travel, where it can affect visibility and airport operations.
+                
+                However, it's important to note that dense fog can also be a hazard, especially when driving or navigating waterways. It can reduce visibility and increase the risk of accidents.
+                
+                Overall, morning clouds with fog can create a peaceful and captivating environment, but it's important to be mindful of potential hazards that may arise.
+                </div>
+              </div>
+            </div>
+            <div class="p-accordion c-accordion js-accordion">
+              <div
+                class="p-accordion__head c-accordion__trigger js-accordion-trigger"
+              >
+                Dispersed Cloud
+                <div class="p-accordion__icon"></div>
+              </div>
+              <div
+                class="p-accordion__body c-accordion__body js-accordion-body"
+              >
+                <div
+                  class="p-accordion__body-in c-accordion__body-in js-accordion-body-in"
+                >
+                Dispersed clouds can create a beautiful and dynamic sky. When the clouds are scattered throughout the sky, it can allow the sun's rays to filter through in interesting and captivating ways, creating stunning displays of light and shadow.
+
+                Dispersed clouds can also be a welcome relief on a hot day, as they can block some of the sun's direct rays and provide a bit of shade. They can also have practical applications, such as in agriculture, where they can help regulate temperature and moisture levels.
+                <br>
+                However, dispersed clouds can also be a sign of changing weather patterns. They can be an indication of an incoming storm or a shift in atmospheric conditions, which can have implications for outdoor activities and travel.
+                
+                Overall, dispersed clouds can create a striking and dynamic sky, but it's important to be aware of their potential implications and to stay mindful of changing weather patterns.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="l-gf">
+          <div class="p-footer-link p-footer-link">
+            <a
+              class="p-footer-link__item js-transition-intro"
+              href="https://github.com/rohitranjan753/"
+              target="_blank"
+            >
+              <svg
+                width="24"
+                height="23.411042944785276"
+                viewBox="0 0 32.6 31.8"
+              >
+                <path
+                  d="M16.3 0C7.3 0 0 7.3 0 16.3c0 7.2 4.7 13.3 11.1 15.5.8.1 1.1-.4 1.1-.8v-2.8c-4.5 1-5.5-2.2-5.5-2.2-.7-1.9-1.8-2.4-1.8-2.4-1.5-1 .1-1 .1-1 1.6.1 2.5 1.7 2.5 1.7 1.5 2.5 3.8 1.8 4.7 1.4.1-1.1.6-1.8 1-2.2-3.6-.4-7.4-1.8-7.4-8.1 0-1.8.6-3.2 1.7-4.4-.1-.3-.7-2 .2-4.2 0 0 1.4-.4 4.5 1.7 1.3-.4 2.7-.5 4.1-.5 1.4 0 2.8.2 4.1.5 3.1-2.1 4.5-1.7 4.5-1.7.9 2.2.3 3.9.2 4.3 1 1.1 1.7 2.6 1.7 4.4 0 6.3-3.8 7.6-7.4 8 .6.5 1.1 1.5 1.1 3V31c0 .4.3.9 1.1.8 6.5-2.2 11.1-8.3 11.1-15.5C32.6 7.3 25.3 0 16.3 0z"
+                ></path></svg></a
+            ><a
+              class="p-footer-link__item js-transition-intro"
+              href="mailto:rohitranjan2022@vitbhopal.ac.in"
+            >
+              <svg width="24" height="18" viewBox="0 0 100 75">
+                <path
+                  d="M100 62.5c0 2.2-.6 4.2-1.6 6L66.8 33.2 98.1 5.9c1.2 1.9 1.9 4.2 1.9 6.6v50zM50 39.6l43.5-38c-1.8-1-3.8-1.6-6-1.6h-75c-2.2 0-4.2.6-6 1.6l43.5 38zm12.1-2.3L52 46.1c-.6.5-1.3.8-2.1.8-.7 0-1.5-.3-2.1-.8l-10.1-8.8-32 35.8c1.9 1.2 4.2 1.9 6.6 1.9h75c2.4 0 4.7-.7 6.6-1.9L62.1 37.3zM1.9 5.9C.7 7.8 0 10.1 0 12.5v50c0 2.2.6 4.2 1.6 6l31.6-35.3L1.9 5.9z"
+                ></path></svg
+            ></a>
+          </div>
+          <div class="p-footer-copy">Copyright &copy; Rohit Ranjan</div>
+        </div>
+      </div>
+      <div class="l-dummy-scroll js-dummy-scroll"></div>
+      <div class="p-contents-header-bg"></div>
+    </div>
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+.l-contents {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  backface-visibility:hidden;
+  @include fontSizeAll(14, 14, 12);
+  &.is-fixed {
+    position: fixed;
+    top: 0; right: 0; left: 0;
+  }
+  &__in {
+    overflow: hidden;
+    background-color: #fff;
+  }
+}
